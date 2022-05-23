@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                         val yOffset = (item.height * scale - height) / 2
 
                         reticle.x = scale * item.barcode.boundingBox!!.left.toFloat() - xOffset
-                        reticle.y = (scale * item.barcode.boundingBox!!.top.toFloat()) - yOffset
+                        reticle.y = scale * item.barcode.boundingBox!!.top.toFloat() - yOffset
 
                     }.launchIn(lifecycleScope)
             }
